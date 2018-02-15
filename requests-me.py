@@ -24,4 +24,3 @@ try:
 
 except requests.exceptions.RequestException:
     print('HTTP Request failed')
-
