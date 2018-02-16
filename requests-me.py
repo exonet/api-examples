@@ -22,5 +22,5 @@ try:
     print("-" * 10 + "[ Full decoded response ]" + "-" * 10)
     print(json.dumps(content, indent=4))
 
-except requests.exceptions.RequestException:
-    print('HTTP Request failed')
+except requests.exceptions.RequestException as exception:
+    print(exception.message)
