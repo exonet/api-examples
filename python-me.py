@@ -8,7 +8,7 @@ endpoint = '/me'
 
 try:
     request = Request('https://api.exonet.nl/' + endpoint.lstrip('/'))
-    request.add_header("Authorization", "Bearer " + open('./api-token.txt', 'r').read())
+    request.add_header("Authorization", "Bearer " + open('./api-token.txt', 'r').read().strip())
     request.add_header("Accept", "application/vnd.Exonet.v1+json")
 
     content = json.loads(urlopen(request).read().decode('utf-8'))

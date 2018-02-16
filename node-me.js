@@ -6,7 +6,7 @@ const fs = require('fs');
 const http = require('https');
 
 // Read the API token.
-const token = fs.readFileSync('./api-token.txt', 'utf8');
+const token = fs.readFileSync('./api-token.txt', 'utf8').trim();
 
 // Set the HTTP options.
 var options = {

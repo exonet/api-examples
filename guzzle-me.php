@@ -14,7 +14,7 @@ use GuzzleHttp\Exception\ClientException;
 $endpoint = '/me';
 
 // The API token as provided by Exonet.
-$token = file_get_contents(__DIR__.'/api-token.txt');
+$token = trim(file_get_contents(__DIR__.'/api-token.txt'));
 
 // Create the client and the request.
 $client = new Client();
@@ -40,6 +40,5 @@ try {
 } catch (ClientException $clientException) {
     echo $clientException->getMessage();
 }
-
 
 echo "\n";

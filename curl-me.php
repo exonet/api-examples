@@ -4,7 +4,7 @@
 $endpoint = '/me';
 
 // The API token as provided by Exonet.
-$token = file_get_contents(__DIR__.'/api-token.txt');
+$token = trim(file_get_contents(__DIR__.'/api-token.txt'));
 
 // Create the cURL resource.
 $ch = curl_init();

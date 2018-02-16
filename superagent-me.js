@@ -7,7 +7,7 @@ const request = require('superagent');
 const fs = require('fs');
 
 // Read the API token.
-const token = fs.readFileSync('./api-token.txt', 'utf8');
+const token = fs.readFileSync('./api-token.txt', 'utf8').trim();
 
 request
     .get('https://api.exonet.nl/me')

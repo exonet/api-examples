@@ -10,7 +10,7 @@ try:
     response = requests.get(
         url="https://api.exonet.nl/" + endpoint.lstrip('/'),
         headers={
-            "Authorization": "Bearer " + open('./api-token.txt', 'r').read(),
+            "Authorization": "Bearer " + open('./api-token.txt', 'r').read().strip(),
             "Accept": "application/vnd.Exonet.v1+json",
         },
     )
