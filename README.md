@@ -1,7 +1,7 @@
 ## Exonet API Examples
 
-This directory contains a few examples written in PHP, JavaScript and Python on how to access the Exonet API by using a 
-token. For each example there are two different version: one without dependencies and one with the most used dependency
+This directory contains a few examples written in PHP, JavaScript, Python and Bash on how to access the Exonet API by using a 
+token. For each example (except Bash) there are two different versions: one without dependencies and one with the most used dependency
 for making HTTP requests.
 
 ### Installation
@@ -22,6 +22,7 @@ $ node node-me.js
 $ node superagent-me.js
 $ python python-me.py
 $ python requests-me.py
+$ ./bash-curl-me.sh
 ```
 
 Both the Python scripts should work with Python 2 as well as Python 3. The PHP examples are tested with PHP 7.1, but 
